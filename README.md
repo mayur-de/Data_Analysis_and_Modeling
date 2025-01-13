@@ -7,7 +7,6 @@
 - Demonstrates end-to-end processes from data exploration to model evaluation.
 
 ## **📊 Projects**
-Your updated section looks excellent! It's concise, well-organized, and makes the content easily accessible. Here's a slight refinement for readability and consistency:
 
 ---
 
