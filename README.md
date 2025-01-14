@@ -19,7 +19,7 @@
 
 ---
 
-### 2. [**Cost and Revenue Analysis: Food Delivery Platform**](https://github.com/mayur-de/Data_Analysis_and_Modeling/tree/ae4ead7a0326df3eac48b55a26140b7952bf9f26/Cost%20and%20Profit%20Analysis%20-%20Food%20Delivery%20Platform)
+### 2. [**Cost and Profit Analysis: Food Delivery Platform**](https://github.com/mayur-de/Data_Analysis_and_Modeling/tree/ae4ead7a0326df3eac48b55a26140b7952bf9f26/Cost%20and%20Profit%20Analysis%20-%20Food%20Delivery%20Platform)
 - 📊 [**_EDA Notebook_:**](https://github.com/mayur-de/Data_Analysis_and_Modeling/blob/c4190584b2b83c6170dbe3f28ef0eb42617db043/Cost%20and%20Profit%20Analysis%20-%20Food%20Delivery%20Platform/Food%20Delivery%20-%20Cost%20and%20Profitability.ipynb) Cost, Revenue and Profitability analysis.  
 - 📝 [**_Executive Summary_:**](https://github.com/mayur-de/Data_Analysis_and_Modeling/blob/c4190584b2b83c6170dbe3f28ef0eb42617db043/Cost%20and%20Profit%20Analysis%20-%20Food%20Delivery%20Platform/Executive%20Summary%20-%20Cost%20and%20Profit%20Analysis%20(Food%20Delivery%20Platform).pdf) Key insights on cost, revenue and profitability and recommendations. 
 - **📂 [**_Dataset_**](https://github.com/mayur-de/Data_Analysis_and_Modeling/blob/c4190584b2b83c6170dbe3f28ef0eb42617db043/Datasets/food_orders_new_delhi.csv):** food_orders_new_delhi.csv.
