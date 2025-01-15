@@ -1,12 +1,12 @@
-# Exploratory and Predictive Analysis: Maven Roasters
+> # Exploratory and Predictive Analysis: Maven Roasters
 
-## Project Overview
+> ## Project Overview
 
 This project conducts an exploratory data analysis (EDA) of sales data from Maven Roasters, a coffee shop chain with three locations in New York City: Astoria, Hell's Kitchen, and Lower Manhattan. The goal is to uncover key insights about sales performance, customer behavior, and product trends to drive strategic decisions.
 
 With over 149,000 transactions spanning six months, this analysis identifies critical revenue drivers, high-value products, and temporal patterns while offering actionable recommendations to maximize profitability.
 
-## Objectives
+> ## Objectives
 
 The primary objectives of this project are:
 
@@ -18,7 +18,7 @@ The primary objectives of this project are:
 - **Advanced Analysis**: Explore advanced techniques such as predictive modeling.
 - **Recommendations**: Make actionable recommendations based on the insights gained.
 
-## Data Description
+> ## Data Description
 
 The dataset consists of transaction records from Maven Roasters' three stores. Key features include:
 
@@ -36,7 +36,7 @@ The dataset consists of transaction records from Maven Roasters' three stores. K
 
 The dataset contains 149,116 rows and 11 columns, covering a period of 181 days, from January 1, 2023, to June 30, 2023. There are 80 unique products, organized into 29 distinct product types and 9 product categories.
 
-## Data Preprocessing
+> ## Data Preprocessing
 
 The following steps were taken to prepare the data for analysis:
 
@@ -47,9 +47,9 @@ The following steps were taken to prepare the data for analysis:
   - **Time-Based Features**: Extracted the `hour` of the day from `transaction_time` to analyze sales patterns by time.
   - **Transaction Value**: Created a new feature, `transaction_value`, as the product of `transaction_qty` and `unit_price` to represent the sales amount.
 
-## Key Findings
+> ## Key Findings
 
-### Summary Metrics
+> ### Summary Metrics
 
 - **Total Transactions**: 149,116.
 - **Total Revenue**: $698,812.33.
@@ -61,17 +61,17 @@ The following steps were taken to prepare the data for analysis:
 - **Increase in Monthly Revenue (Jan-June)**: 103.83%.
 - **Increase in Transaction Frequency (Jan-June)**: 104.18%.
 
-### Store Performance
+> ### Store Performance
 
 - All three stores perform competitively, with **Hell's Kitchen** slightly leading in sales.
 
-### Product Analysis
+> ### Product Analysis
 
 - **Coffee** dominates sales across all locations, contributing approximately 38% of total revenue.
 - **Coffee and Tea** together account for about two-thirds of the total revenue.
 - **Premium products** such as those in the **Coffee Beans** and **Branded** categories are typically higher priced.
 
-### Transaction Patterns
+> ### Transaction Patterns
 
 - Transaction frequency increases from January to June.
 - Peak transaction hours are between 8 AM and 11 AM.
@@ -79,13 +79,13 @@ The following steps were taken to prepare the data for analysis:
 - Weekends have lower transaction volumes than weekdays.
 - **High-value transactions** make up a small percentage (2.19%) of total transactions but contribute 9.08% of the total sales.
 
-### Key Relationships
+> ### Key Relationships
 
 - **Strong positive correlation (0.686)** between `unit_price` and `transaction_value`.
 - **Weak to moderate positive correlation (0.356)** between `transaction_quantity` and `transaction_value`.
 - **Weak negative correlation (-0.1235)** between `unit_price` and `transaction_quantity`.
 
-## Recommendations
+> ## Recommendations
 
 - **Focus on High-Value Products**: Prioritize Coffee Beans and Branded products, as they drive higher transaction values.
 - **Optimize Staffing**: Ensure adequate staffing during peak hours (8 AM - 11 AM).
@@ -95,7 +95,7 @@ The following steps were taken to prepare the data for analysis:
 - **Leverage Location Strengths**: Tailor promotions to each location's unique sales trends, such as promoting Coffee Beans in Hell's Kitchen.
 - **Data-Driven Decision Making**: Use heatmaps and line plots to track sales trends across the day.
 
-## Repository Structure
+> ## Repository Structure
 
 ```
 ├── Exploratory Data Analysis - Coffee Shop Sales
@@ -104,26 +104,21 @@ The following steps were taken to prepare the data for analysis:
 ├── README.md
 ```
 
-- `data/`: Contains the original dataset.
-- `notebooks/`: Contains the Jupyter Notebooks for data analysis and time series forecasting.
-- `reports/`: Contains the PDF reports generated from the analysis.
-- `README.md`: This file.
-
-## How to Use This Repository
+> ## How to Use This Repository
 
 1. Clone the repository to your local machine.
 2. Navigate to the files.
 3. Open and run the Jupyter Notebook files to reproduce the analysis and visualizations.
 4. For predictive analysis, explore the `Predictive Analysis - Coffee Shop Sales.ipynb` notebook.
 
-## Quick Start
+> ## Quick Start
 
 1. Install Python 3.9+ and Jupyter Notebook.
 2. Navigate to the `notebooks/` folder.
 3. Open and run `Exploratory Data Analysis - Coffee Shop Sales` to explore the EDA.
 4. Open and run `Predictive Analysis - Coffee Shop Sales` for predictive analysis.
 
-## Contributions
+> ## Contributions
 
 If you have suggestions for improvement or find this project helpful, feel free to open an issue or fork the repository to contribute. Feedback is always welcome!
 
