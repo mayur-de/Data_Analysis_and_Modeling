@@ -1,7 +1,15 @@
 > # **Cost and Profit Analysis: Food Delivery Platform**
 
 > ## **Project Overview**
-This project examines the financial and operational aspects of a food delivery platform to assess its cost structure, identify inefficiencies, and recommend actionable strategies to enhance profitability. By analyzing transactional data, the project identifies key cost drivers, quantifies revenue performance, and offers recommendations to optimize operations and improve net income.
+This project analyzes the financial and operational aspects of a food delivery platform to:
+- Assess the cost structure.
+- Identify inefficiencies.
+- Recommend strategies to enhance profitability.
+
+By analyzing transactional data, the project:
+- Identifies key cost drivers.
+- Quantifies revenue performance.
+- Provides actionable recommendations to optimize operations and improve net income.
 
 > ## **Recommendations for Platform to Increase Profitability**
 1. **Reduce Discounts**: Discounts constitute nearly half of the total costs.
@@ -10,12 +18,6 @@ This project examines the financial and operational aspects of a food delivery p
 4. **Encourage Larger Order Values**: Larger orders positively influence net income.
 5. **Revise Delivery Fee Structure**: Reassess fee coverage to minimize cost burdens.
 6. **Minimize Processing Fees**: Optimize payment gateway agreements.
-
-> ## **Objectives**
-1. Perform an exploratory analysis of the cost and revenue data.
-2. Identify and quantify the platform's major cost drivers.
-3. Evaluate the impact of operational inefficiencies on profitability.
-4. Provide actionable recommendations to enhance the financial performance of the platform.
 
 > ## **Data Description**
 The dataset consists of transactional records for 1,000 orders from the food delivery platform, covering essential financial and operational metrics.
