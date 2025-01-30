@@ -1,17 +1,17 @@
 > # **Cost and Profit Analysis: Food Delivery Platform**
 
-> ## **Project Overview**
+> ## 📌**Project Overview**
 This project analyzes the financial and operational aspects of a food delivery platform to:
-- Assess the cost structure.
-- Identify inefficiencies.
-- Recommend strategies to enhance profitability.
+- **Assess the cost structure.**
+- **Identify inefficiencies.**
+- **Recommend strategies to enhance profitability.**
 
 By analyzing transactional data, the project:
-- Identifies key cost drivers.
-- Quantifies revenue performance.
-- Provides actionable recommendations to optimize operations and improve net income.
+- **Identifies key cost drivers.**
+- **Quantifies revenue performance.**
+- **Provides actionable recommendations to optimize operations and improve net income.**
 
-> ## **Recommendations for Platform to Increase Profitability**
+> ## 💡**Recommendations for Platform to Increase Profitability**
 1. **Reduce Discounts**: Discounts constitute nearly half of the total costs.
 2. **Increase Commission Fees**: Strong correlation with net income.
 3. **Optimize Refund Rates**: High refund rates negatively impact profitability.
@@ -19,13 +19,13 @@ By analyzing transactional data, the project:
 5. **Revise Delivery Fee Structure**: Reassess fee coverage to minimize cost burdens.
 6. **Minimize Processing Fees**: Optimize payment gateway agreements.
 
-> ## **Data Description**
+> ## 📊**Data Description**
 The dataset consists of transactional records for 1,000 orders from the food delivery platform, covering essential financial and operational metrics.
 
-### **Key Features:**
-- **Order Details**: Unique identifiers, timestamps, and customer/restaurant information.
-- **Financial Metrics**: Order value, delivery fees, discounts, and refunds.
-- **Revenue Sources**: Commission fees and payment details.
+> ### ***Key Features:***
+- **Order Details** – Unique identifiers, timestamps, customer/restaurant information.  
+- **Financial Metrics** – Order value, delivery fees, discounts, refunds.  
+- **Revenue Sources** – Commission fees and payment details.  
 
 | Column Name               | Description                                                                 |
 |---------------------------|-----------------------------------------------------------------------------|
@@ -42,15 +42,15 @@ The dataset consists of transactional records for 1,000 orders from the food del
 | Payment Processing Fee   | Fee charged by the payment gateway for processing payments (cost)         |
 | Refunds/Chargebacks      | Amount refunded or charged back due to disputes or cancellations (cost)   |
 
-> ### **Feature Engineering:**
-- **Discount Percentage (Disc Pct)**: Extracted from 'Discounts and Offers'.
-- **Discount Amount**: Calculated as discount percentage multiplied by order value.
-- **Cost**: Summed 'Delivery Fee', 'Discount Amount', 'Payment Processing Fee', and 'Refunds/Chargebacks'.
-- **Revenue**: Defined as 'Commission Fee'.
-- **Net Income**: Calculated as 'Revenue' minus 'Cost'.
-- **Date**: Extracted date from 'Order Date and Time'.
+> ## 🏗 **Feature Engineering**  
+- **Discount Percentage (Disc Pct)** – Extracted from 'Discounts and Offers'.  
+- **Discount Amount** – Calculated as discount percentage × order value.  
+- **Cost** – Summed: **Delivery Fee + Discount Amount + Payment Processing Fee + Refunds/Chargebacks** 
+- **Revenue** – Defined as 'Commission Fee'.  
+- **Net Income** – Revenue minus Cost.  
+- **Date** – Extracted from 'Order Date and Time'.
 
-> ## **Key Findings**
+> ## 🔍**Key Findings**
 > ### **Financial Performance**
 - **Total Loss**: ₹34,051.85.
 - **Revenue-to-Cost Ratio**: 0.79 (₹0.79 earned for every ₹1 spent).
@@ -67,30 +67,32 @@ The dataset consists of transactional records for 1,000 orders from the food del
 - **61.8%** of orders are loss-making, while **37.9%** are profitable.
 - Profit-making orders feature lower discounts, fewer refunds, and higher commission fees.
 
-> ## **Repository Structure**
+> ## 📂 **Repository Structure**  
 ```
 │
 ├── Cost and Profit Analysis - Food Delivery Platform.ipynb
 ├── Executive Summary.pdf
 ├── README.md
 ```
+> ## 🚀 **How to Use This Repository**  
+1. Clone the repository to your local machine.  
+2. Navigate to the files and open Jupyter Notebook.
+3. Open `Cost and Profit Analysis - Food Delivery Platform.ipynb` for a detailed breakdown of costs and revenue.  
 
-> ## **How to Use This Repository**
-1. Clone the repository to your local machine.
-2. Navigate to the files and open Jupyter Notebook files.
-3. Follow the analysis in `Cost and Profit Analysis - Food Delivery Platform` for a detailed breakdown of costs and revenue.
+> ## ⚡ **Quick Start**  
+1. Install **Python 3.9+** and **Jupyter Notebook**.
+2. Run `Cost and Profit Analysis - Food Delivery Platform.ipynb` to explore insights.  
 
-> ## **Quick Start**
-1. Install Python 3.9+ and Jupyter Notebook.
-2. Navigate to the `notebooks/` folder.
-3. Run the `Cost and Profit Analysis - Food Delivery Platform` notebook to explore insights.
-
-> ## **Contributions**
-If you have suggestions for improvement or find this project helpful, feel free to open an issue or fork the repository to contribute. Feedback is always welcome!
+> ## 🤝 **Contributions**  
+If you have suggestions for improvement or find this project helpful:  
+- Open an **issue**.  
+- Fork the repository to **contribute**.  
+- Feedback is always welcome! 
 
 ---
+> ## ✍️ **Author**  
+- **Mayurkumar Deshmukh**  
+- 📧 [mayurkumar.de@gmail.com]  
+- 🌐 [LinkedIn Profile](https://www.linkedin.com/in/mayurkumar-deshmukh/)  
 
-> ### Author
-- [Mayurkumar Deshmukh]  
-- [mayurkumar.de@gmail.com]  
-- [[LinkedIn Profile](https://www.linkedin.com/in/mayurkumar-deshmukh/)]
+---- **_Happy Analyzing!!!_** ----
