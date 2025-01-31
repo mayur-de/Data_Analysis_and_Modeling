@@ -1,3 +1,3 @@
-> # **Forecasting & Modeling: Road Accidents**
+> # **Forecasting & Modeling: Global Road Accidents**
 
 > ## **Project Overview**
