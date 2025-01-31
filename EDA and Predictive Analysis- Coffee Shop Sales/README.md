@@ -4,7 +4,7 @@
 
 This project conducts an exploratory data analysis (EDA) of sales data from Maven Roasters, a coffee shop chain with three locations in New York City: Astoria, Hell's Kitchen, and Lower Manhattan. The goal is to uncover key insights about sales performance, customer behavior, and product trends to drive strategic decisions.
 
-With over 149,000 transactions spanning six months, this analysis identifies critical revenue drivers, high-value products, and temporal patterns while offering actionable recommendations to maximize profitability.
+With over 149,000 transactions spanning six months, this analysis identifies **critical revenue drivers**, **high-value products**, and **temporal patterns** while offering **actionable recommendations to maximize profitability**.
 
 > ## Objectives
 
@@ -114,11 +114,11 @@ The following steps were taken to prepare the data for analysis:
 > ## Quick Start
 
 1. Install Python 3.9+ and Jupyter Notebook.
-2. Navigate to the `notebooks/` folder.
-3. Open and run `Exploratory Data Analysis - Coffee Shop Sales` to explore the EDA.
-4. Open and run `Predictive Analysis - Coffee Shop Sales` for predictive analysis.
+2. Open and run `Exploratory Data Analysis - Coffee Shop Sales` to explore the EDA.
+3. Open and run `Predictive Analysis - Coffee Shop Sales` for predictive analysis.
 
 > ## Contributions
 
-If you have suggestions for improvement or find this project helpful, feel free to open an issue or fork the repository to contribute. Feedback is always welcome!
+- If you have suggestions for improvement or find this project helpful, feel free to open an issue or fork the repository to contribute. 
+- Feedback is always welcome!
 
