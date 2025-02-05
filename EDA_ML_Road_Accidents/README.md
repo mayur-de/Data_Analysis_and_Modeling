@@ -1,7 +1,7 @@
 > # **_EDA and Machine Learning : Global Road Accidents_**
 
 > ## Overview
-- This document provides a comprehensive exploratory data analysis (EDA) of a dataset containing **132,000 accident entries** over **30 columns**.
+- This document provides a comprehensive EDA of a dataset containing **132,000 accident entries** over **30 columns**.
 - Machine learning models are applied to classify and predict various target variables related to road accidents.
 
 > ## EDA: Key Findings
@@ -32,6 +32,7 @@
 - **Environmental & Road Conditions**: Weather, road type, conditions, and traffic volume were considered in relation to accident severity.
 - **Severity & Impact**: Relationships between accident severity, causes, and vehicle involvement were examined.
 
-> # 1. Classification:
+> # **_Machine Learning_**
+> ## 1. Classification:
 
 
