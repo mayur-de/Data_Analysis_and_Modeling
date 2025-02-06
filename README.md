@@ -18,9 +18,9 @@
 - **📝 [**_Executive Summary_:**](https://github.com/mayur-de/Data_Analysis_and_Modeling/blob/c4190584b2b83c6170dbe3f28ef0eb42617db043/Cost%20and%20Profit%20Analysis%20-%20Food%20Delivery%20Platform/Executive%20Summary%20-%20Cost%20and%20Profit%20Analysis%20(Food%20Delivery%20Platform).pdf)** Key insights on cost, revenue and profitability and recommendations. 
 - **📂 _Dataset_:** [**food_orders_new_delhi.csv**](https://github.com/mayur-de/Data_Analysis_and_Modeling/blob/c4190584b2b83c6170dbe3f28ef0eb42617db043/Datasets/food_orders_new_delhi.csv).
 
-> # 3. [**_EDA and Machine Learning_**](https://github.com/mayur-de/Data_Analysis_and_Modeling/tree/2e9ab08f4a5c9266224c069675154552ecf8db53/EDA_ML_Road_Accidents)
-- EDA Notebook
-- Dataset
+> ## 3. [**EDA and Machine Learning: Global Road Accidents**](https://github.com/mayur-de/Data_Analysis_and_Modeling/tree/2e9ab08f4a5c9266224c069675154552ecf8db53/EDA_ML_Road_Accidents)
+- **📊 [**_EDA Notebook_**](https://github.com/mayur-de/Data_Analysis_and_Modeling/blob/119b1a68fb014c4c55638a54103f299cf57f6cf7/EDA_ML_Road_Accidents/EDA%20-%20Global%20Road%20Accidents.ipynb):** A comprehensive exploration of data through visualization visualizations.
+- **📂 _Dataset_:** [**_road_accident_dataset_**](https://github.com/mayur-de/Data_Analysis_and_Modeling/blob/119b1a68fb014c4c55638a54103f299cf57f6cf7/Datasets/road_accident_dataset.rar)
 
 > ## **🚀 How to Use**
 - **Clone the repository**:
