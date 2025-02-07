@@ -1,5 +1,7 @@
 > # **_EDA and Machine Learning : Global Road Accidents_**
->** [_Open the notebook_**](https://github.com/mayur-de/Data_Analysis_and_Modeling/blob/2af18b8ca68159655d73ab2f7879462619f928f2/EDA_ML_Road_Accidents/EDA%20-%20Global%20Road%20Accidents.ipynb)
+> - **View the notebook [on GitHub](https://github.com/mayur-de/Data_Analysis_and_Modeling/blob/2af18b8ca68159655d73ab2f7879462619f928f2/EDA_ML_Road_Accidents/EDA%20-%20Global%20Road%20Accidents.ipynb)**
+> - **View the notebook [on Kaggle](https://www.kaggle.com/code/mayurkumardeshmukh/comprehensive-eda-global-road-accident)**
+
 
 > ## Overview
 - This document provides a comprehensive EDA of a dataset containing **132,000 accident entries** over **30 columns**.
