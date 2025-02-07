@@ -1,4 +1,5 @@
 > # **_EDA and Machine Learning : Global Road Accidents_**
+>** [_Open the notebook_**](https://github.com/mayur-de/Data_Analysis_and_Modeling/blob/2af18b8ca68159655d73ab2f7879462619f928f2/EDA_ML_Road_Accidents/EDA%20-%20Global%20Road%20Accidents.ipynb)
 
 > ## Overview
 - This document provides a comprehensive EDA of a dataset containing **132,000 accident entries** over **30 columns**.
@@ -33,25 +34,26 @@
 - **Severity & Impact**: Relationships between accident severity, causes, and vehicle involvement were examined.
 
 > # **_Machine Learning_**
-> ## 1. Classification
-> ## Model Evaluation Summary
-### 1.1 Logistic Regression
+> **_Open the notebook_**
+> ## 1. Classification: Model Evaluation Summary
+
+## 1.1 Logistic Regression
 - **Accuracy:** 33.56%, similar to random guessing.
 - **Precision, Recall, and F1-Score:** Low (~33-34%) across all classes, indicating poor classification performance.
 - **Confusion Matrix:** Predictions are almost evenly spread across classes, showing poor feature separability.
 
-### 1.2 Random Forest Classifier
+## 1.2 Random Forest Classifier
 - **Accuracy:** 33.52%, no significant improvement over Logistic Regression.
 - **Precision, Recall, and F1-Score:** Consistently low (~33-34%) across all severity levels.
 - **Confusion Matrix:** High misclassification across all classes.
 - **Feature Importance:** Economic factors (`Economic Loss`, `Medical Cost`, `Insurance Claims`) dominate, while road/weather conditions seem less predictive.
 
-### 1.3 XGBoost
+## 1.3 XGBoost
 - **Accuracy:** 33.22%, still close to random guessing.
 - **Precision, Recall, and F1-Score:** Similar to other models (~33%), indicating no significant learning of patterns.
 - **Confusion Matrix:** High misclassification rate, failing to separate accident severity levels effectively.
 
-### 1.4 Overall Conclusion: Classification
+## **Overall Conclusion: Classification**
 - All three models perform poorly, with accuracy around 33%, indicating an inability to distinguish between severity levels.
 - The models struggle due to:
   - **Poor feature separability**.
