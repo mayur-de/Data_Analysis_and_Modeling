@@ -1,7 +1,7 @@
 > # **_EDA and Machine Learning : Global Road Accidents_**
-> - **View the notebook [on GitHub](https://github.com/mayur-de/Data_Analysis_and_Modeling/blob/2af18b8ca68159655d73ab2f7879462619f928f2/EDA_ML_Road_Accidents/EDA%20-%20Global%20Road%20Accidents.ipynb)**
-> - **View the notebook [on Kaggle](https://www.kaggle.com/code/mayurkumardeshmukh/comprehensive-eda-global-road-accident)**
-
+> - **[View the notebook `on GitHub`](https://github.com/mayur-de/Data_Analysis_and_Modeling/blob/2af18b8ca68159655d73ab2f7879462619f928f2/EDA_ML_Road_Accidents/EDA%20-%20Global%20Road%20Accidents.ipynb)**
+> - **[View the notebook `on Kaggle`](https://www.kaggle.com/code/mayurkumardeshmukh/comprehensive-eda-global-road-accident)**
+> - **[View the Machine Learning notebook `on GitHub`](https://github.com/mayur-de/Data_Analysis_and_Modeling/blob/fee2d82f3033ffdae025c407eae661f17170e3eb/EDA_ML_Road_Accidents/ML%20-%20%5BClassification%5D%20-%20Road%20Accidents.ipynb)**
 
 > ## Overview
 - This document provides a comprehensive EDA of a dataset containing **132,000 accident entries** over **30 columns**.
@@ -36,7 +36,7 @@
 - **Severity & Impact**: Relationships between accident severity, causes, and vehicle involvement were examined.
 
 > # **_Machine Learning_**
-> **_Open the notebook_**
+> - **[View the Machine Learning notebook `on GitHub`](https://github.com/mayur-de/Data_Analysis_and_Modeling/blob/fee2d82f3033ffdae025c407eae661f17170e3eb/EDA_ML_Road_Accidents/ML%20-%20%5BClassification%5D%20-%20Road%20Accidents.ipynb)**
 > ## 1. Classification: Model Evaluation Summary
 
 ## 1.1 Logistic Regression
