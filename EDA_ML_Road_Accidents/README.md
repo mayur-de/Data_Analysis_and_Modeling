@@ -33,6 +33,27 @@
 - **Severity & Impact**: Relationships between accident severity, causes, and vehicle involvement were examined.
 
 > # **_Machine Learning_**
-> ## 1. Classification:
+> ## 1. Classification
+> ## Model Evaluation Summary
+### 1.1 Logistic Regression
+- **Accuracy:** 33.56%, similar to random guessing.
+- **Precision, Recall, and F1-Score:** Low (~33-34%) across all classes, indicating poor classification performance.
+- **Confusion Matrix:** Predictions are almost evenly spread across classes, showing poor feature separability.
 
+### 1.2 Random Forest Classifier
+- **Accuracy:** 33.52%, no significant improvement over Logistic Regression.
+- **Precision, Recall, and F1-Score:** Consistently low (~33-34%) across all severity levels.
+- **Confusion Matrix:** High misclassification across all classes.
+- **Feature Importance:** Economic factors (`Economic Loss`, `Medical Cost`, `Insurance Claims`) dominate, while road/weather conditions seem less predictive.
 
+### 1.3 XGBoost
+- **Accuracy:** 33.22%, still close to random guessing.
+- **Precision, Recall, and F1-Score:** Similar to other models (~33%), indicating no significant learning of patterns.
+- **Confusion Matrix:** High misclassification rate, failing to separate accident severity levels effectively.
+
+### 1.4 Overall Conclusion: Classification
+- All three models perform poorly, with accuracy around 33%, indicating an inability to distinguish between severity levels.
+- The models struggle due to:
+  - **Poor feature separability**.
+  - **Lack of strong predictive variables**.
+  - **Imbalanced data**.
