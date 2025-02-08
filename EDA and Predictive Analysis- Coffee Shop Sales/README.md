@@ -1,102 +1,86 @@
-> # Exploratory and Predictive Analysis: Maven Roasters
+> # **Exploratory and Predictive Analysis: Maven Roasters**  
 
-> ## Project Overview
+## **Project Overview**  
+- **Goal**: Analyze sales data from Maven Roasters (Astoria, Hell’s Kitchen, Lower Manhattan) to uncover insights on revenue, customer behavior, and product trends.  
+- **Scope**: 149,116 transactions over 181 days (Jan 1 – Jun 30, 2023).  
+- **Focus**: `Revenue drivers`, `high-value products`, `temporal patterns`, and `actionable recommendations`.  
 
-This project conducts an exploratory data analysis (EDA) of sales data from Maven Roasters, a coffee shop chain with three locations in New York City: Astoria, Hell's Kitchen, and Lower Manhattan. The goal is to uncover key insights about sales performance, customer behavior, and product trends to drive strategic decisions.
+## **Objectives**  
+1. **Dataset Understanding**: Assess structure, features, and completeness.
+2. **Data Quality Checks**: Identify and handle missing data, outliers, and formatting issues.
+3. **Descriptive Analysis**: Key KPIs (revenue, sales volume, store performance).
+4. **Data Visualization**: Communicate trends effectively.
+5. **Relationship Analysis**: Identify correlations in customer purchases.
+6. **Advanced Analysis**: Explore predictive modeling.
+7. **Recommendations**: Provide actionable insights.  
 
-With over 149,000 transactions spanning six months, this analysis identifies **critical revenue drivers**, **high-value products**, and **temporal patterns** while offering **actionable recommendations to maximize profitability**.
+## **Data Description**  
+- **149,116 rows, 11 columns** (Jan 1 – Jun 30, 2023).  
+- **80 products** categorized into **29 product types and 9 product categories**.  
+- **Key Features**:  
+  1. `transaction_id`: A unique identifier for each transaction.
+  2. `transaction_date`: The date of the transaction (MM/DD/YY).
+  3. `transaction_time`: The timestamp of the transaction (HH:MM:SS).
+  4. `transaction_qty`: The quantity of items sold.
+  5. `store_id`: Unique ID of the coffee shop.
+  6. `store_location`: Location of the coffee shop.
+  7. `product_id`: Unique ID of the product sold.
+  8. `unit_price`: Retail price of the product.
+  9. `product_category`: Description of the product category.
+  10. `product_type`: Description of the product type.
+  11. `product_detail`: Description of the specific product.
 
-> ## Objectives
+## **Data Preprocessing**  
+- **Null Values & Duplicates**: None found.  
+- **Data Type Adjustments**: Converted `transaction_date` to datetime format.  
+- **Feature Engineering**:  
+  - Extracted **date-based features** (`day_of_month`, `day_of_week`, `month`).  
+  - Extracted **time-based features** (`hour`).  
+  - Created **`transaction_value`** (`transaction_qty × unit_price`).  
 
-The primary objectives of this project are:
+> # **Key Findings**  
 
-- **Dataset Understanding**: Assess the structure, features, and completeness of the data.
-- **Data Quality Checks**: Address missing data, outliers, and formatting issues.
-- **Descriptive Analysis**: Summarize key performance indicators (KPIs) such as revenue, sales volume, and store performance.
-- **Data Visualization**: Present insights visually for better communication of trends and patterns.
-- **Relationship Analysis**: Identify correlations and patterns in customer purchases.
-- **Advanced Analysis**: Explore advanced techniques such as predictive modeling.
-- **Recommendations**: Make actionable recommendations based on the insights gained.
+### **Summary Metrics**  
+- **Total Transactions**: 149,116  
+- **Total Revenue**: $698,812.33  
+- **Units Sold**: 214,470  
+- **Avg. Daily Transactions**: 823.85  
+- **Avg. Daily Revenue**: $3,860.84  
+- **Revenue per Transaction**: $4.69  
+- **Revenue per Unit**: $3.26  
+- **Monthly Revenue Growth (Jan–Jun)**: +103.83%  
+- **Transaction Frequency Growth (Jan–Jun)**: +104.18%  
 
-> ## Data Description
+### **Store Performance**  
+- All stores perform competitively, with **Hell’s Kitchen leading in sales**.  
 
-The dataset consists of transaction records from Maven Roasters' three stores. Key features include:
+### **Product Analysis**  
+- **Coffee**: Dominates sales (38% of total revenue).  
+- **Coffee & Tea**: ~66% of total revenue.  
+- **Premium Products (Coffee Beans, Branded items)**: Higher price points.  
 
-- `transaction_id`: A unique identifier for each transaction.
-- `transaction_date`: The date of the transaction (MM/DD/YY).
-- `transaction_time`: The timestamp of the transaction (HH:MM:SS).
-- `transaction_qty`: The quantity of items sold.
-- `store_id`: Unique ID of the coffee shop.
-- `store_location`: Location of the coffee shop.
-- `product_id`: Unique ID of the product sold.
-- `unit_price`: Retail price of the product.
-- `product_category`: Description of the product category.
-- `product_type`: Description of the product type.
-- `product_detail`: Description of the specific product.
+### **Transaction Patterns**  
+- **Increasing transaction frequency** (Jan–Jun).  
+- **Peak sales hours**: 8 AM – 11 AM.  
+- **Sales drop after 5 PM**.  
+- **Weekends**: Lower transaction volume.  
+- **High-value transactions (2.19%)** contribute **9.08%** of total sales.  
 
-The dataset contains 149,116 rows and 11 columns, covering a period of 181 days, from January 1, 2023, to June 30, 2023. There are 80 unique products, organized into 29 distinct product types and 9 product categories.
+### **Key Relationships**  
+- **Strong correlation (0.686)**: `unit_price` & `transaction_value`.  
+- **Moderate correlation (0.356)**: `transaction_qty` & `transaction_value`.  
+- **Weak negative correlation (-0.1235)**: `unit_price` & `transaction_qty`.  
 
-> ## Data Preprocessing
-
-The following steps were taken to prepare the data for analysis:
-
-- **Null Values and Duplicates**: Checked for null values and duplicate records. None were found.
-- **Data Type Adjustments**: Adjusted data types for consistency and accuracy. For example, `transaction_date` was converted to datetime format.
-- **Feature Engineering**:
-  - **Date-Based Features**: Extracted variables such as `day_of_month`, `day_of_week`, and `month` from `transaction_date`.
-  - **Time-Based Features**: Extracted the `hour` of the day from `transaction_time` to analyze sales patterns by time.
-  - **Transaction Value**: Created a new feature, `transaction_value`, as the product of `transaction_qty` and `unit_price` to represent the sales amount.
-
-> ## Key Findings
-
-> ### Summary Metrics
-
-- **Total Transactions**: 149,116.
-- **Total Revenue**: $698,812.33.
-- **Units Sold**: 214,470.
-- **Average Daily Transactions**: 823.85 transactions per day.
-- **Average Daily Revenue**: $3,860.84.
-- **Revenue per Transaction**: $4.69.
-- **Revenue per Unit Sold**: $3.26.
-- **Increase in Monthly Revenue (Jan-June)**: 103.83%.
-- **Increase in Transaction Frequency (Jan-June)**: 104.18%.
-
-> ### Store Performance
-
-- All three stores perform competitively, with **Hell's Kitchen** slightly leading in sales.
-
-> ### Product Analysis
-
-- **Coffee** dominates sales across all locations, contributing approximately 38% of total revenue.
-- **Coffee and Tea** together account for about two-thirds of the total revenue.
-- **Premium products** such as those in the **Coffee Beans** and **Branded** categories are typically higher priced.
-
-> ### Transaction Patterns
-
-- Transaction frequency increases from January to June.
-- Peak transaction hours are between 8 AM and 11 AM.
-- There is a noticeable drop in transactions after 5 PM.
-- Weekends have lower transaction volumes than weekdays.
-- **High-value transactions** make up a small percentage (2.19%) of total transactions but contribute 9.08% of the total sales.
-
-> ### Key Relationships
-
-- **Strong positive correlation (0.686)** between `unit_price` and `transaction_value`.
-- **Weak to moderate positive correlation (0.356)** between `transaction_quantity` and `transaction_value`.
-- **Weak negative correlation (-0.1235)** between `unit_price` and `transaction_quantity`.
-
-> ## Recommendations
-
-- **Focus on High-Value Products**: Prioritize Coffee Beans and Branded products, as they drive higher transaction values.
-- **Optimize Staffing**: Ensure adequate staffing during peak hours (8 AM - 11 AM).
-- **Targeted Promotions**: Consider promotions during midday dips (12 PM - 2 PM) and for lower-value items like bakery products.
-- **Strategic Pricing**: Make strategic pricing adjustments for premium items.
-- **Enhance Sales of Tea and Bakery**: Develop strategies to increase sales in the Tea and Bakery categories.
-- **Leverage Location Strengths**: Tailor promotions to each location's unique sales trends, such as promoting Coffee Beans in Hell's Kitchen.
-- **Data-Driven Decision Making**: Use heatmaps and line plots to track sales trends across the day.
-
-> ## Repository Structure
-
+## **Recommendations**  
+- **Focus on High-Value Products**: Prioritize **Coffee Beans & Branded products**.  
+- **Optimize Staffing**: Increase staff during **peak hours (8 AM – 11 AM)**.  
+- **Targeted Promotions**: Offer deals during **midday dips (12 PM – 2 PM)**.  
+- **Strategic Pricing**: Adjust premium item prices.  
+- **Boost Tea & Bakery Sales**: Implement marketing strategies.  
+- **Leverage Store Strengths**: Tailor promotions based on location trends.  
+- **Data-Driven Decision Making**: Use **heatmaps & line plots** for tracking sales trends.  
+---
+## **Repository Structure**  
 ```
 ├── Exploratory Data Analysis - Coffee Shop Sales
 ├── Predictive Analysis - Coffee Shop Sales
@@ -104,21 +88,16 @@ The following steps were taken to prepare the data for analysis:
 ├── README.md
 ```
 
-> ## How to Use This Repository
+## **How to Use This Repository**  
+1. Clone the repository.  
+2. Open files and run Jupyter Notebooks.  
+3. Explore `Predictive Analysis - Coffee Shop Sales.ipynb` for forecasting insights.  
 
-1. Clone the repository to your local machine.
-2. Navigate to the files.
-3. Open and run the Jupyter Notebook files to reproduce the analysis and visualizations.
-4. For predictive analysis, explore the `Predictive Analysis - Coffee Shop Sales.ipynb` notebook.
+## **Quick Start**  
+1. Install Python 3.9+ & Jupyter Notebook.  
+2. Run `Exploratory Data Analysis - Coffee Shop Sales.ipynb`.  
+3. Run `Predictive Analysis - Coffee Shop Sales.ipynb` for predictions.  
 
-> ## Quick Start
-
-1. Install Python 3.9+ and Jupyter Notebook.
-2. Open and run `Exploratory Data Analysis - Coffee Shop Sales` to explore the EDA.
-3. Open and run `Predictive Analysis - Coffee Shop Sales` for predictive analysis.
-
-> ## Contributions
-
-- If you have suggestions for improvement or find this project helpful, feel free to open an issue or fork the repository to contribute. 
-- Feedback is always welcome!
-
+## **Contributions**  
+- Open issues or fork the repository for improvements.  
+- Feedback is welcome! 
