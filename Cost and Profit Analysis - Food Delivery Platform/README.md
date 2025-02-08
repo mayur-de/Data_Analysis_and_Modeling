@@ -11,7 +11,7 @@ By analyzing transactional data, the project:
 - **Quantifies revenue performance.**
 - **Provides actionable recommendations to optimize operations and improve net income.**
 
-> ## 💡**Recommendations for Platform to Increase Profitability**
+> # **Recommendations for Platform to Increase Profitability**
 1. **Reduce Discounts**: Discounts constitute nearly half of the total costs.
 2. **Increase Commission Fees**: Strong correlation with net income.
 3. **Optimize Refund Rates**: High refund rates negatively impact profitability.
