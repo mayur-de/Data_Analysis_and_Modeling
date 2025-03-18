@@ -25,21 +25,21 @@
 - **📂 _Dataset_:** [**road_accident_dataset**](https://github.com/mayur-de/Data_Analysis_and_Modeling/blob/119b1a68fb014c4c55638a54103f299cf57f6cf7/Datasets/road_accident_dataset.rar)
 
 
-> ## **🚀 `How to Use`**
+> ## **🚀 How to Use**
 - **Clone the repository**:
   ```bash
   https://github.com/mayur-de/Data_Analysis_and_Modeling.git
   ```
-- **`Explore`**:
+- **Explore**:
   - **Notebooks**: Jupyter notebooks for EDA and model building.
   - **Executive Summary**: Executive Summary of the Analyses.
   - **Models**: Stored scripts for ML models.
   - **Metrics**: Evaluation results and performance metrics.
 
 
-> ## **💡 `How to Contribute`**
+> ## **💡 How to Contribute**
 - Fork the repo and submit a pull request for improvements or new models.
 
-> ## **🎉 `Acknowledgments`**
+> ## **🎉 Acknowledgments**
 - Libraries: **NumPy**, **Pandas**, **Scikit-learn**, **Statsmodels** for data analysis and machine learning.
 - Datasets and resources from the open-source community.
